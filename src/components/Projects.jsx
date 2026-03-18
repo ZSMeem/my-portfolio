@@ -1,6 +1,4 @@
-import { projects } from "../data/portfolioData";
-
-export default function Projects() {
+export default function Projects({ projects }) {
   return (
     <section id="projects" className="section">
       <h3>Selected Projects</h3>

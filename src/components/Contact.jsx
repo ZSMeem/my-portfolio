@@ -1,6 +1,4 @@
-import { profile } from "../data/portfolioData";
-
-export default function Contact() {
+export default function Contact({ profile }) {
   return (
     <section id="contact" className="section">
       <h3>Contact</h3>

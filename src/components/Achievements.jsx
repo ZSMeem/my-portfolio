@@ -1,6 +1,4 @@
-import { achievements } from "../data/portfolioData";
-
-export default function Achievements() {
+export default function Achievements({ achievements }) {
   return (
     <section id="achievements" className="section">
       <h3>Achievements</h3>

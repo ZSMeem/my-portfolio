@@ -1,6 +1,4 @@
-import { skills } from "../data/portfolioData";
-
-export default function Skills() {
+export default function Skills({ skills }) {
   return (
     <section id="skills" className="section">
       <h3>Skills</h3>

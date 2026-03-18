@@ -1,6 +1,4 @@
-import { profile } from "../data/portfolioData";
-
-export default function About() {
+export default function About({ profile }) {
   return (
     <section id="about" className="section">
       <h3>About Me</h3>

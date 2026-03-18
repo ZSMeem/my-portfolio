@@ -1,6 +1,4 @@
-import { education } from "../data/portfolioData";
-
-export default function Education() {
+export default function Education({ education }) {
   return (
     <section id="education" className="section">
       <h3>Education</h3>

@@ -1,16 +1,50 @@
-# React + Vite
+# Portfolio With Supabase Admin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This Vite React portfolio now supports:
 
-Currently, two official plugins are available:
+- Public portfolio content loaded from Supabase
+- Fallback local content when Supabase is not configured yet
+- Email/password login at `/admin`
+- A protected admin editor for profile, skills, experience, education, achievements, and projects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Local setup
 
-## React Compiler
+1. Install dependencies:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+2. Create `.env` from `.env.example` and add:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+VITE_SUPABASE_URL=your-project-url
+VITE_SUPABASE_ANON_KEY=your-anon-key
+```
+
+3. In Supabase SQL Editor, run [supabase/schema.sql](/Users/zerinshaimameem/Desktop/my-portfolio/supabase/schema.sql).
+
+4. In Supabase Authentication:
+- Enable Email auth
+- Create your admin user
+
+5. Start the app:
+
+```bash
+npm run dev
+```
+
+## Deployment on Vercel
+
+Add the same environment variables in the Vercel project settings:
+
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_ANON_KEY`
+
+Then deploy normally.
+
+## Notes
+
+- Public visitors can read the portfolio data.
+- Only authenticated users can update it.
+- Security is enforced by Supabase Row Level Security policies, not by hiding frontend code.

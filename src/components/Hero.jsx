@@ -1,6 +1,4 @@
-import { profile } from "../data/portfolioData";
-
-export default function Hero() {
+export default function Hero({ profile }) {
   return (
     <section className="hero">
       <div className="hero-text">

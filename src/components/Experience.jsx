@@ -1,6 +1,4 @@
-import { experience } from "../data/portfolioData";
-
-export default function Experience() {
+export default function Experience({ experience }) {
   return (
     <section id="experience" className="section">
       <h3>Experience</h3>
