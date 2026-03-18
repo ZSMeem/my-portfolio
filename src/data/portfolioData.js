@@ -7,6 +7,7 @@ export const defaultPortfolioData = {
     email: "zerin.shaima.meem@gmail.com",
     linkedin: "https://linkedin.com/in/zerin-shaima-meem",
     github: "https://github.com/ZSMeem",
+    avatar: "https://github.com/ZSMeem.png",
     summary:
       "Programmer with strong passion for Software Engineering and Artificial Intelligence. I enjoy building practical systems, solving algorithmic problems, and doing research that has real-world impact.",
     about:

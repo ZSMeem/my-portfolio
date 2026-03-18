@@ -425,6 +425,16 @@ export default function AdminPage() {
                     }
                   />
                 </label>
+                <label className="form-field">
+                  <span>Avatar URL</span>
+                  <input
+                    value={draft.profile.avatar ?? ""}
+                    onChange={(event) =>
+                      updateProfile("avatar", event.target.value)
+                    }
+                    placeholder="https://github.com/your-username.png"
+                  />
+                </label>
               </div>
 
               <label className="form-field">

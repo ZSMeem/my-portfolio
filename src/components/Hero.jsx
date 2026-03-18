@@ -23,7 +23,15 @@ export default function Hero({ profile }) {
       </div>
 
       <div className="info-card">
-        <div className="avatar">ZM</div>
+        {profile.avatar ? (
+          <img
+            className="avatar avatar-image"
+            src={profile.avatar}
+            alt={`${profile.name} profile`}
+          />
+        ) : (
+          <div className="avatar">ZM</div>
+        )}
         <p>
           <strong>Location:</strong> {profile.location}
         </p>
