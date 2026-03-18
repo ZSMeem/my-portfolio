@@ -5,7 +5,7 @@ This Vite React portfolio now supports:
 - Public portfolio content loaded from Supabase
 - Fallback local content when Supabase is not configured yet
 - Email/password login at `/admin`
-- A protected admin editor for profile, skills, experience, education, achievements, and projects
+- A protected admin editor for profile, skills, experience, education, achievements, projects, and project tool tags
 
 ## Local setup
 

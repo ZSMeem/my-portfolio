@@ -13,7 +13,7 @@ function createBlankEducation() {
 }
 
 function createBlankProject() {
-  return { title: "", description: "" };
+  return { title: "", description: "", tools: [""] };
 }
 
 function AuthForm() {
@@ -246,6 +246,52 @@ export default function AdminPage() {
               ...item,
               points: item.points.filter(
                 (_, currentPointIndex) => currentPointIndex !== pointIndex
+              ),
+            }
+          : item
+      ),
+    }));
+  };
+
+  const updateProjectTool = (projectIndex, toolIndex, value) => {
+    setDraft((current) => ({
+      ...current,
+      projects: current.projects.map((item, itemIndex) =>
+        itemIndex === projectIndex
+          ? {
+              ...item,
+              tools: (item.tools ?? []).map((tool, currentToolIndex) =>
+                currentToolIndex === toolIndex ? value : tool
+              ),
+            }
+          : item
+      ),
+    }));
+  };
+
+  const addProjectTool = (projectIndex) => {
+    setDraft((current) => ({
+      ...current,
+      projects: current.projects.map((item, itemIndex) =>
+        itemIndex === projectIndex
+          ? {
+              ...item,
+              tools: [...(item.tools ?? []), ""],
+            }
+          : item
+      ),
+    }));
+  };
+
+  const removeProjectTool = (projectIndex, toolIndex) => {
+    setDraft((current) => ({
+      ...current,
+      projects: current.projects.map((item, itemIndex) =>
+        itemIndex === projectIndex
+          ? {
+              ...item,
+              tools: (item.tools ?? []).filter(
+                (_, currentToolIndex) => currentToolIndex !== toolIndex
               ),
             }
           : item
@@ -673,6 +719,37 @@ export default function AdminPage() {
                       }
                     />
                   </label>
+
+                  <div className="subsection">
+                    <p className="subsection-title">Required tools</p>
+                    {(project.tools ?? []).map((tool, toolIndex) => (
+                      <div
+                        key={`project-${index}-tool-${toolIndex}`}
+                        className="repeat-row"
+                      >
+                        <input
+                          value={tool}
+                          onChange={(event) =>
+                            updateProjectTool(index, toolIndex, event.target.value)
+                          }
+                        />
+                        <button
+                          type="button"
+                          className="btn btn-light"
+                          onClick={() => removeProjectTool(index, toolIndex)}
+                        >
+                          Remove
+                        </button>
+                      </div>
+                    ))}
+                    <button
+                      type="button"
+                      className="btn btn-light"
+                      onClick={() => addProjectTool(index)}
+                    >
+                      Add tool tag
+                    </button>
+                  </div>
 
                   <button
                     type="button"

@@ -70,10 +70,12 @@ export function normalizePortfolioData(rawData) {
     projects: cleanObjectArray(rawData?.projects, (item) => ({
       title: cleanText(item?.title),
       description: cleanText(item?.description),
+      tools: cleanStringArray(item?.tools),
     })).length
       ? cleanObjectArray(rawData.projects, (item) => ({
           title: cleanText(item?.title),
           description: cleanText(item?.description),
+          tools: cleanStringArray(item?.tools),
         }))
       : fallback.projects,
   };

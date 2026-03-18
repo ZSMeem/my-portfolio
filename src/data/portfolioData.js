@@ -73,11 +73,13 @@ export const defaultPortfolioData = {
       title: "CSI-based Position Independent Gesture Recognition System",
       description:
         "An LSTM-based gesture recognition system using WiFi CSI data, published in IEEE WIECON-ECE 2024.",
+      tools: ["Python", "LSTM", "WiFi CSI", "IEEE"],
     },
     {
       title: "CUET Competitive Programming Community Management System",
       description:
         "A platform for real-time leaderboard tracking, contest monitoring, and performance visualization for competitive programmers.",
+      tools: ["React", "Node.js", "Leaderboard", "Data Visualization"],
     },
   ],
 };
