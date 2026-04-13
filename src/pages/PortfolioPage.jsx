@@ -16,11 +16,11 @@ export default function PortfolioPage() {
     <div className="app">
       <Navbar />
       <main className="container">
-        {error && (
+        {/* {error && (
           <div className="status-banner warning">
             Using local fallback content because Supabase could not be loaded.
           </div>
-        )}
+        )} */}
         {source === "local" && !error && (
           <div className="status-banner">
             The site is currently using local content. Connect Supabase to make
