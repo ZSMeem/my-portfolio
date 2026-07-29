@@ -49,11 +49,16 @@ export default function Navbar() {
   }, [dark]);
 
   const handleLinkClick = () => setIsOpen(false);
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <header className="navbar">
       <div className="navbar-inner">
-        <h1 className="logo">Zerin Shaima Meem</h1>
+        <h1 className="logo">
+          <button type="button" className="logo-button" onClick={scrollToTop}>
+            Zerin Shaima Meem
+          </button>
+        </h1>
 
         <div className="navbar-end">
           <nav className="nav-links">

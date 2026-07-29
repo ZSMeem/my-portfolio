@@ -87,6 +87,21 @@ a {
   color: var(--text-heading);
 }
 
+.logo-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.logo-button:hover {
+  color: var(--tag-color);
+}
+
 .navbar-end {
   display: flex;
   align-items: center;
