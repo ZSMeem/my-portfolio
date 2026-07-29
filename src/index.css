@@ -324,11 +324,30 @@ a {
   flex-direction: column;
 }
 
+.research-card.has-image {
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.research-card.has-image.reverse {
+  flex-direction: row-reverse;
+}
+
+.research-body {
+  min-width: 0;
+}
+
+.research-card.has-image .research-body {
+  flex: 1;
+}
+
 .research-image {
   display: block;
+  flex: 0 0 auto;
+  width: 280px;
   max-width: 100%;
-  max-height: 260px;
-  width: auto;
+  max-height: 220px;
   height: auto;
   object-fit: contain;
   margin: 0 auto 16px;
@@ -336,6 +355,10 @@ a {
   border: 1px solid var(--border-light);
   background: var(--bg);
   padding: 12px;
+}
+
+.research-card.has-image .research-image {
+  margin: 0;
 }
 
 .research-link {
@@ -422,6 +445,16 @@ a {
   .card-header {
     grid-template-columns: 1fr;
     display: block;
+  }
+
+  .research-card.has-image,
+  .research-card.has-image.reverse {
+    flex-direction: column;
+  }
+
+  .research-card.has-image .research-image {
+    width: 100%;
+    margin: 0 0 16px;
   }
 
   .navbar-inner {
