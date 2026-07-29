@@ -27,7 +27,7 @@ Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` to your Vercel project sett
 - **GitHub:** https://github.com/ZSMeem
 
 ## Summary
-Programmer with strong passion for Software Engineering and Artificial Intelligence. I enjoy building practical systems, solving algorithmic problems, and doing research that has real-world impact.
+Hiiiii Programmer with strong passion for Software Engineering and Artificial Intelligence. I enjoy building practical systems, solving algorithmic problems, and doing research that has real-world impact.
 
 ## About
 I am a software engineer and graduate student who enjoys web development, AI, and systems research. My background in competitive programming strengthened my problem-solving skills, and my academic and industry experiences helped me grow as both an engineer and a researcher.
