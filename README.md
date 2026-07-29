@@ -111,21 +111,26 @@ A full-stack platform that allows users to create professional portfolio website
 
 ### Adaptive Rate Control in Wireless Networks
 **Tools:** NS-3, Wireless Networking, AI, Rate Adaptation, Python
+![Adaptive Rate Control in Wireless Networks](https://zsmeem.github.io/my-portfolio/images/research/adaptive-rate-control.png)
 
 Traditional network rate control mechanisms depend on fixed rules or predefined heuristics that struggle with continuously changing conditions such as congestion, interference, mobility, and signal variation. This graduate research investigates AI-based methods to dynamically adjust communication parameters in order to improve throughput, packet delivery rate, latency, and overall network reliability. Current activities include reading recent wireless networking papers, reproducing published rate adaptation algorithms, implementing approaches from research papers, comparing reproduced results with original findings, and evaluating the limitations of existing methods.
 
 ### Reinforcement Learning for UAV Communication Networks
 **Tools:** Reinforcement Learning, UAV Networks, MDP, Python, NS-3
+![Reinforcement Learning for UAV Communication Networks](https://zsmeem.github.io/my-portfolio/images/research/reinforcement-learning-uav.png)
 
 UAV-based communication systems operate in highly dynamic environments where traditional optimization techniques often struggle because network conditions change continuously. This graduate research explores how a Reinforcement Learning agent can learn optimal autonomous decisions for resource allocation and communication in UAV-assisted networks by interacting with the environment. Current work covers understanding Markov Decision Processes, studying RL algorithms, exploring reward function design, reviewing UAV communication frameworks, and reproducing existing research methodologies to evaluate algorithm performance.
 
 ### CSI-Based Position Independent Gesture Recognition System
 **Tools:** Python, CNN, LSTM, Vision Transformer, WiFi CSI, ESP32, IEEE
+![CSI-Based Position Independent Gesture Recognition System](https://zsmeem.github.io/my-portfolio/images/research/csi-gesture-recognition.gif)
+**Link:** https://scholar.google.com/citations?view_op=view_citation&hl=en&user=MEXMV40AAAAJ&citation_for_view=MEXMV40AAAAJ:u5HHmVD_uO8C
 
 Traditional gesture recognition systems rely on cameras and wearable sensors, which raise privacy concerns and depend on lighting conditions. This research developed a privacy-preserving gesture recognition system using WiFi Channel State Information (CSI) extracted from ESP32 microcontrollers, which captures how wireless signals change when they interact with human movement. Multiple approaches were investigated including traditional ML models (Random Forest, XGBoost, LightGBM) and deep learning models (CNN, LSTM, Vision Transformer). The system recognizes gestures accurately across different user positions without requiring any cameras or additional hardware. Published at WIECON-ECE IEEE Conference 2024.
 
 ### Spot Light: Disaster Safety Assistance Mobile Application
 **Tools:** Mobile Development, Firebase, Location Services, Human-Centered Design
+**Link:** https://scholar.google.com/citations?view_op=view_citation&hl=en&user=MEXMV40AAAAJ&citation_for_view=MEXMV40AAAAJ:u-x6o8ySG0sC
 
 Existing communication infrastructure often fails during disasters, leaving affected people without access to emergency services or shelter information. This project developed a digital platform to improve communication and accessibility during disaster response, featuring emergency communication, real-time disaster alerts, location-based assistance, shelter information, and emergency support requests. The system was designed with a human-centered approach to ensure usability under stressful emergency conditions. Published at ICCPCT 2024.
 

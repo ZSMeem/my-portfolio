@@ -1,3 +1,5 @@
+const RESEARCH_IMAGE_BASE = `${import.meta.env.BASE_URL}images/research`;
+
 export const defaultPortfolioData = {
   profile: {
     name: "Zerin Shaima Meem",
@@ -83,24 +85,29 @@ export const defaultPortfolioData = {
       description:
         "Traditional network rate control mechanisms depend on fixed rules that struggle with continuously changing conditions. This graduate research investigates AI-based methods to dynamically adjust communication parameters to improve throughput, latency, and reliability.",
       tools: ["NS-3", "Wireless Networking", "AI", "Rate Adaptation", "Python"],
+      image: `${RESEARCH_IMAGE_BASE}/adaptive-rate-control.png`,
     },
     {
       title: "Reinforcement Learning for UAV Communication Networks",
       description:
         "UAV-based communication systems operate in highly dynamic environments where traditional optimization techniques often struggle. This graduate research explores how a Reinforcement Learning agent can learn optimal autonomous decisions for resource allocation in UAV-assisted networks.",
       tools: ["Reinforcement Learning", "UAV Networks", "MDP", "Python", "NS-3"],
+      image: `${RESEARCH_IMAGE_BASE}/reinforcement-learning-uav.png`,
     },
     {
       title: "CSI-based Position Independent Gesture Recognition System",
       description:
         "Traditional gesture recognition systems rely on cameras and wearable sensors, raising privacy concerns. This research developed a privacy-preserving system using WiFi Channel State Information from ESP32 microcontrollers, investigating CNN, LSTM, and Vision Transformer models. Published at WIECON-ECE IEEE Conference 2024.",
       tools: ["Python", "LSTM", "CNN", "WiFi CSI", "IEEE"],
+      image: `${RESEARCH_IMAGE_BASE}/csi-gesture-recognition.gif`,
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=MEXMV40AAAAJ&citation_for_view=MEXMV40AAAAJ:u5HHmVD_uO8C",
     },
     {
       title: "Spot Light: Disaster Safety Assistance Mobile Application",
       description:
         "Existing infrastructure often fails during disasters, leaving people without access to emergency services. This project developed a digital platform featuring emergency communication, real-time alerts, location-based assistance, and shelter information. Published at ICCPCT 2024.",
       tools: ["Mobile Development", "Firebase", "Location Services"],
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=MEXMV40AAAAJ&citation_for_view=MEXMV40AAAAJ:u-x6o8ySG0sC",
     },
   ],
 };

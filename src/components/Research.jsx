@@ -13,6 +13,14 @@ function ResearchCard({ item }) {
 
   return (
     <div className="card research-card">
+      {item.image && (
+        <img
+          className="research-image"
+          src={item.image}
+          alt={item.title}
+          loading="lazy"
+        />
+      )}
       <h4>{item.title}</h4>
       <p className="research-summary">{summary}</p>
 
@@ -42,6 +50,17 @@ function ResearchCard({ item }) {
             <p>{details}</p>
           </div>
         </>
+      )}
+
+      {item.link && (
+        <a
+          href={item.link}
+          target="_blank"
+          rel="noreferrer"
+          className="research-link"
+        >
+          View Publication →
+        </a>
       )}
     </div>
   );

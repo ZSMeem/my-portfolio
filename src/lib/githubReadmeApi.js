@@ -90,12 +90,25 @@ function parseProjects(text) {
             .map((t) => t.trim())
             .filter(Boolean)
         : [];
+      const imageLine = lines.find((l) => /^!\[.*\]\(.*\)/.test(l));
+      const image = imageLine
+        ? imageLine.match(/^!\[.*\]\((.*)\)/)[1].trim()
+        : "";
+      const linkLine = lines.find((l) => /^\*\*Link:\*\*/.test(l));
+      const link = linkLine
+        ? linkLine.replace(/^\*\*Link:\*\*\s*/, "").trim()
+        : "";
       const description = lines
         .slice(1)
-        .filter((l) => !/^\*\*Tools:\*\*/.test(l))
+        .filter(
+          (l) =>
+            !/^\*\*Tools:\*\*/.test(l) &&
+            !/^!\[.*\]\(.*\)/.test(l) &&
+            !/^\*\*Link:\*\*/.test(l)
+        )
         .join(" ")
         .trim();
-      return { title, description, tools };
+      return { title, description, tools, image, link };
     })
     .filter((p) => p.title);
 }

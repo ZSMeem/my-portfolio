@@ -324,6 +324,36 @@ a {
   flex-direction: column;
 }
 
+.research-image {
+  display: block;
+  max-width: 100%;
+  max-height: 260px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  background: var(--bg);
+  padding: 12px;
+}
+
+.research-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 14px;
+  color: var(--tag-color);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.research-link:hover {
+  text-decoration: underline;
+}
+
 .research-summary {
   margin: 0 0 12px;
   line-height: 1.8;
