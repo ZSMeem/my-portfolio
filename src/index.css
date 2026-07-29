@@ -431,11 +431,17 @@ a {
   margin: 0;
 }
 
-.research-link {
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.card-link {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  margin-top: 14px;
   color: var(--tag-color);
   font-size: 13px;
   font-weight: 600;
@@ -443,7 +449,7 @@ a {
   width: fit-content;
 }
 
-.research-link:hover {
+.card-link:hover {
   text-decoration: underline;
 }
 

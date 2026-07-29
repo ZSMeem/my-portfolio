@@ -73,10 +73,25 @@ export const defaultPortfolioData = {
   ],
   projects: [
     {
-      title: "CUET Competitive Programming Community Management System",
+      title: "CareTrack-Connect: Health Tracking Platform",
       description:
-        "A platform for real-time leaderboard tracking, contest monitoring, and performance visualization for competitive programmers.",
-      tools: ["React", "Node.js", "Leaderboard", "Data Visualization"],
+        "A healthcare platform designed to improve communication between patients and healthcare providers, featuring pre and post appointment wellness tracking and data flow management.",
+      tools: ["JavaScript", "Node.js", "Supabase", "SQL", "Vite"],
+      repo: "https://github.com/UNO-CSCI4830/CareTrack-Connect",
+    },
+    {
+      title: "Portfolio Builder",
+      description:
+        "A full-stack platform that allows users to create professional portfolio websites with authentication, customizable sections, and public sharing links.",
+      tools: ["React", "JavaScript", "Node.js", "PostgreSQL", "AWS RDS", "AWS Amplify"],
+      repo: "https://github.com/ZSMeem/Portfolio-Builder",
+    },
+    {
+      title: "CP CMS: Competitive Programming Community Management System",
+      description:
+        "A full-featured platform for contest management, real-time leaderboards, user ranking systems, and automated contest data scraping using Puppeteer and JSDOM parsing.",
+      tools: ["Angular", "TypeScript", "Material UI", "Node.js", "MongoDB", "Puppeteer"],
+      repo: "https://github.com/ZSMeem/cpcms",
     },
   ],
   research: [
@@ -93,6 +108,7 @@ export const defaultPortfolioData = {
         "UAV-based communication systems operate in highly dynamic environments where traditional optimization techniques often struggle. This graduate research explores how a Reinforcement Learning agent can learn optimal autonomous decisions for resource allocation in UAV-assisted networks.",
       tools: ["Reinforcement Learning", "UAV Networks", "MDP", "Python", "NS-3"],
       image: `${RESEARCH_IMAGE_BASE}/reinforcement-learning-uav.png`,
+      repo: "https://github.com/ZSMeem/AdaptiveRateControl-for-UAV-using-DRL",
     },
     {
       title: "CSI-based Position Independent Gesture Recognition System",

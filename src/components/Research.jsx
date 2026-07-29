@@ -58,15 +58,29 @@ function ResearchCard({ item, reverse }) {
           </>
         )}
 
-        {item.link && (
-          <a
-            href={item.link}
-            target="_blank"
-            rel="noreferrer"
-            className="research-link"
-          >
-            View Publication →
-          </a>
+        {(item.link || item.repo) && (
+          <div className="card-links">
+            {item.link && (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                className="card-link"
+              >
+                View Publication →
+              </a>
+            )}
+            {item.repo && (
+              <a
+                href={item.repo}
+                target="_blank"
+                rel="noreferrer"
+                className="card-link"
+              >
+                View Code →
+              </a>
+            )}
+          </div>
         )}
       </div>
     </div>

@@ -98,17 +98,22 @@ function parseProjects(text) {
       const link = linkLine
         ? linkLine.replace(/^\*\*Link:\*\*\s*/, "").trim()
         : "";
+      const repoLine = lines.find((l) => /^\*\*Repo:\*\*/.test(l));
+      const repo = repoLine
+        ? repoLine.replace(/^\*\*Repo:\*\*\s*/, "").trim()
+        : "";
       const description = lines
         .slice(1)
         .filter(
           (l) =>
             !/^\*\*Tools:\*\*/.test(l) &&
             !/^!\[.*\]\(.*\)/.test(l) &&
-            !/^\*\*Link:\*\*/.test(l)
+            !/^\*\*Link:\*\*/.test(l) &&
+            !/^\*\*Repo:\*\*/.test(l)
         )
         .join(" ")
         .trim();
-      return { title, description, tools, image, link };
+      return { title, description, tools, image, link, repo };
     })
     .filter((p) => p.title);
 }

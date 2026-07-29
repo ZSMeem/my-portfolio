@@ -92,20 +92,23 @@ My journey spans three interconnected areas: algorithmic problem solving through
 
 ## Projects
 
-### CP CMS: Competitive Programming Community Management System
-**Tools:** Angular, TypeScript, Material UI, Node.js, MongoDB, Puppeteer
-
-A full-featured platform for contest management, real-time leaderboards, user ranking systems, and automated contest data scraping using Puppeteer and JSDOM parsing.
-
 ### CareTrack-Connect: Health Tracking Platform
 **Tools:** JavaScript, Node.js, Supabase, SQL, Vite
+**Repo:** https://github.com/UNO-CSCI4830/CareTrack-Connect
 
 A healthcare platform designed to improve communication between patients and healthcare providers, featuring pre and post appointment wellness tracking and data flow management.
 
 ### Portfolio Builder
 **Tools:** React, JavaScript, Node.js, PostgreSQL, AWS RDS, AWS Amplify
+**Repo:** https://github.com/ZSMeem/Portfolio-Builder
 
 A full-stack platform that allows users to create professional portfolio websites with authentication, customizable sections, and public sharing links.
+
+### CP CMS: Competitive Programming Community Management System
+**Tools:** Angular, TypeScript, Material UI, Node.js, MongoDB, Puppeteer
+**Repo:** https://github.com/ZSMeem/cpcms
+
+A full-featured platform for contest management, real-time leaderboards, user ranking systems, and automated contest data scraping using Puppeteer and JSDOM parsing.
 
 ## Research
 
@@ -118,6 +121,7 @@ Traditional network rate control mechanisms depend on fixed rules or predefined 
 ### Reinforcement Learning for UAV Communication Networks
 **Tools:** Reinforcement Learning, UAV Networks, MDP, Python, NS-3
 ![Reinforcement Learning for UAV Communication Networks](https://zsmeem.github.io/my-portfolio/images/research/reinforcement-learning-uav.png)
+**Repo:** https://github.com/ZSMeem/AdaptiveRateControl-for-UAV-using-DRL
 
 UAV-based communication systems operate in highly dynamic environments where traditional optimization techniques often struggle because network conditions change continuously. This graduate research explores how a Reinforcement Learning agent can learn optimal autonomous decisions for resource allocation and communication in UAV-assisted networks by interacting with the environment. Current work covers understanding Markov Decision Processes, studying RL algorithms, exploring reward function design, reviewing UAV communication frameworks, and reproducing existing research methodologies to evaluate algorithm performance.
 

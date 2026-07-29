@@ -16,6 +16,31 @@ export default function Projects({ projects }) {
                 ))}
               </div>
             )}
+
+            {(project.link || project.repo) && (
+              <div className="card-links">
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="card-link"
+                  >
+                    View Publication →
+                  </a>
+                )}
+                {project.repo && (
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="card-link"
+                  >
+                    View Code →
+                  </a>
+                )}
+              </div>
+            )}
           </div>
         ))}
       </div>
