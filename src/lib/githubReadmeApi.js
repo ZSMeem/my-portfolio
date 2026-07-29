@@ -1,5 +1,6 @@
-const RAW_README_URL =
-  "https://raw.githubusercontent.com/ZSMeem/my-portfolio/main/README.md";
+const RAW_README_URL = import.meta.env.DEV
+  ? "/readme.md"
+  : "https://raw.githubusercontent.com/ZSMeem/my-portfolio/main/README.md";
 
 function extractSection(content, name) {
   const re = new RegExp(`## ${name}\\n([\\s\\S]*?)(?=\\n## |$)`, "i");
@@ -126,5 +127,6 @@ export async function getReadmeContent() {
     education: parseEducation(extractSection(content, "Education")),
     achievements: parseBullets(extractSection(content, "Achievements")),
     projects: parseProjects(extractSection(content, "Projects")),
+    research: parseProjects(extractSection(content, "Research")),
   };
 }

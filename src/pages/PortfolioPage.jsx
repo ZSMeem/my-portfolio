@@ -6,27 +6,17 @@ import Experience from "../components/Experience";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
+import Research from "../components/Research";
 import Skills from "../components/Skills";
 import { usePortfolioContent } from "../hooks/usePortfolioContent";
 
 export default function PortfolioPage() {
-  const { data, error, source } = usePortfolioContent();
+  const { data } = usePortfolioContent();
 
   return (
     <div className="app">
       <Navbar />
       <main className="container">
-        {/* {error && (
-          <div className="status-banner warning">
-            Using local fallback content because Supabase could not be loaded.
-          </div>
-        )} */}
-        {source === "local" && !error && (
-          <div className="status-banner">
-            The site is currently using local content. Connect Supabase to make
-            it editable from the admin page.
-          </div>
-        )}
         <Hero profile={data.profile} />
         <About profile={data.profile} />
         <Skills skills={data.skills} />
@@ -34,6 +24,7 @@ export default function PortfolioPage() {
         <Education education={data.education} />
         <Achievements achievements={data.achievements} />
         <Projects projects={data.projects} />
+        <Research research={data.research} />
         <Contact profile={data.profile} />
       </main>
     </div>

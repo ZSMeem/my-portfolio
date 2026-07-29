@@ -319,6 +319,64 @@ a {
   transition: background 0.2s, border-color 0.2s;
 }
 
+.research-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.research-summary {
+  margin: 0 0 12px;
+  line-height: 1.8;
+}
+
+.research-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 8px 14px;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 13px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background 0.2s, color 0.2s;
+}
+
+.research-toggle:hover {
+  color: var(--text);
+}
+
+.research-chevron {
+  display: inline-block;
+  transition: transform 0.25s ease;
+  font-style: normal;
+}
+
+.research-chevron.open {
+  transform: rotate(180deg);
+}
+
+.research-drawer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+  opacity: 0;
+}
+
+.research-drawer.open {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.research-drawer p {
+  margin: 16px 0 0;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
 .status-banner {
   margin-bottom: 24px;
   padding: 14px 16px;

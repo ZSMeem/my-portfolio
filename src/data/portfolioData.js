@@ -71,16 +71,36 @@ export const defaultPortfolioData = {
   ],
   projects: [
     {
-      title: "CSI-based Position Independent Gesture Recognition System",
-      description:
-        "An LSTM-based gesture recognition system using WiFi CSI data, published in IEEE WIECON-ECE 2024.",
-      tools: ["Python", "LSTM", "WiFi CSI", "IEEE"],
-    },
-    {
       title: "CUET Competitive Programming Community Management System",
       description:
         "A platform for real-time leaderboard tracking, contest monitoring, and performance visualization for competitive programmers.",
       tools: ["React", "Node.js", "Leaderboard", "Data Visualization"],
+    },
+  ],
+  research: [
+    {
+      title: "Adaptive Rate Control in Wireless Networks",
+      description:
+        "Traditional network rate control mechanisms depend on fixed rules that struggle with continuously changing conditions. This graduate research investigates AI-based methods to dynamically adjust communication parameters to improve throughput, latency, and reliability.",
+      tools: ["NS-3", "Wireless Networking", "AI", "Rate Adaptation", "Python"],
+    },
+    {
+      title: "Reinforcement Learning for UAV Communication Networks",
+      description:
+        "UAV-based communication systems operate in highly dynamic environments where traditional optimization techniques often struggle. This graduate research explores how a Reinforcement Learning agent can learn optimal autonomous decisions for resource allocation in UAV-assisted networks.",
+      tools: ["Reinforcement Learning", "UAV Networks", "MDP", "Python", "NS-3"],
+    },
+    {
+      title: "CSI-based Position Independent Gesture Recognition System",
+      description:
+        "Traditional gesture recognition systems rely on cameras and wearable sensors, raising privacy concerns. This research developed a privacy-preserving system using WiFi Channel State Information from ESP32 microcontrollers, investigating CNN, LSTM, and Vision Transformer models. Published at WIECON-ECE IEEE Conference 2024.",
+      tools: ["Python", "LSTM", "CNN", "WiFi CSI", "IEEE"],
+    },
+    {
+      title: "Spot Light: Disaster Safety Assistance Mobile Application",
+      description:
+        "Existing infrastructure often fails during disasters, leaving people without access to emergency services. This project developed a digital platform featuring emergency communication, real-time alerts, location-based assistance, and shelter information. Published at ICCPCT 2024.",
+      tools: ["Mobile Development", "Firebase", "Location Services"],
     },
   ],
 };
