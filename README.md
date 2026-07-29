@@ -98,6 +98,12 @@ My journey spans three interconnected areas: algorithmic problem solving through
 
 A healthcare platform designed to improve communication between patients and healthcare providers, featuring pre and post appointment wellness tracking and data flow management.
 
+### Knowledge Graph-based Curriculum Planner
+**Tools:** Python, NetworkX, Matplotlib, Graph Algorithms, DAG
+**Repo:** https://github.com/ZSMeem/Knowledge-Graph-based-Curriculum-Planner-Using-Graph-Algorithms
+
+Manually planning course prerequisites across a curriculum is tedious and error-prone. This project models courses as nodes and prerequisite relationships as directed edges in a Directed Acyclic Graph, applying cycle detection and topological sorting to compute valid course sequences and render interactive curriculum visualizations.
+
 ### Portfolio Builder
 **Tools:** React, JavaScript, Node.js, PostgreSQL, AWS RDS, AWS Amplify
 **Repo:** https://github.com/ZSMeem/Portfolio-Builder

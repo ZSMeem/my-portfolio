@@ -80,6 +80,13 @@ export const defaultPortfolioData = {
       repo: "https://github.com/UNO-CSCI4830/CareTrack-Connect",
     },
     {
+      title: "Knowledge Graph-based Curriculum Planner",
+      description:
+        "Manually planning course prerequisites across a curriculum is tedious and error-prone. This project models courses as nodes and prerequisite relationships as directed edges in a Directed Acyclic Graph, applying cycle detection and topological sorting to compute valid course sequences and render interactive curriculum visualizations.",
+      tools: ["Python", "NetworkX", "Matplotlib", "Graph Algorithms", "DAG"],
+      repo: "https://github.com/ZSMeem/Knowledge-Graph-based-Curriculum-Planner-Using-Graph-Algorithms",
+    },
+    {
       title: "Portfolio Builder",
       description:
         "A full-stack platform that allows users to create professional portfolio websites with authentication, customizable sections, and public sharing links.",
