@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { clonePortfolioData } from "../data/portfolioData";
 import { getPortfolioContent } from "../lib/portfolioApi";
+import { getReadmeContent } from "../lib/githubReadmeApi";
 
 export function usePortfolioContent() {
   const [data, setData] = useState(() => clonePortfolioData());
@@ -13,27 +14,38 @@ export function usePortfolioContent() {
 
     async function loadContent() {
       try {
-        const result = await getPortfolioContent();
+        let portfolioResult;
 
-        if (!active) {
+        try {
+          portfolioResult = await getPortfolioContent();
+        } catch {
+          portfolioResult = { data: clonePortfolioData(), source: "local" };
+        }
+
+        if (!active) return;
+
+        if (portfolioResult.source === "supabase") {
+          setData(portfolioResult.data);
+          setSource("supabase");
+          setError("");
           return;
         }
 
-        setData(result.data);
-        setSource(result.source);
-        setError("");
-      } catch (loadError) {
-        if (!active) {
-          return;
+        // Supabase not configured — try GitHub README
+        try {
+          const readmeData = await getReadmeContent();
+          if (!active) return;
+          setData(readmeData);
+          setSource("github");
+          setError("");
+        } catch {
+          if (!active) return;
+          setData(portfolioResult.data);
+          setSource("local");
+          setError("");
         }
-
-        setData(clonePortfolioData());
-        setSource("local");
-        setError(loadError.message ?? "Unable to load portfolio content.");
       } finally {
-        if (active) {
-          setLoading(false);
-        }
+        if (active) setLoading(false);
       }
     }
 
