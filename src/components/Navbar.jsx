@@ -55,35 +55,37 @@ export default function Navbar() {
       <div className="navbar-inner">
         <h1 className="logo">Zerin Shaima Meem</h1>
 
-        <nav className="nav-links">
-          {links.map((link) => (
-            <a key={link.href} href={link.href}>
-              {link.label}
-            </a>
-          ))}
-        </nav>
+        <div className="navbar-end">
+          <nav className="nav-links">
+            {links.map((link) => (
+              <a key={link.href} href={link.href}>
+                {link.label}
+              </a>
+            ))}
+          </nav>
 
-        <div className="navbar-right">
-          <button
-            type="button"
-            className="theme-toggle"
-            aria-label="Toggle dark mode"
-            onClick={() => setDark((d) => !d)}
-          >
-            {dark ? <SunIcon /> : <MoonIcon />}
-          </button>
+          <div className="navbar-right">
+            <button
+              type="button"
+              className="theme-toggle"
+              aria-label="Toggle dark mode"
+              onClick={() => setDark((d) => !d)}
+            >
+              {dark ? <SunIcon /> : <MoonIcon />}
+            </button>
 
-          <button
-            type="button"
-            className="menu-toggle"
-            aria-expanded={isOpen}
-            aria-label="Toggle navigation menu"
-            onClick={() => setIsOpen((open) => !open)}
-          >
-            <span />
-            <span />
-            <span />
-          </button>
+            <button
+              type="button"
+              className="menu-toggle"
+              aria-expanded={isOpen}
+              aria-label="Toggle navigation menu"
+              onClick={() => setIsOpen((open) => !open)}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
         </div>
       </div>
 
