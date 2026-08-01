@@ -39,25 +39,25 @@ My journey spans three interconnected areas: algorithmic problem solving through
 C++, Python, JavaScript, TypeScript, C, Java, SQL, HTML, CSS, LaTeX, Markdown
 
 ### Frontend Development
-React, Next.js, Angular, Material UI, Angular Material, Tailwind CSS, SCSS, Bootstrap, Syncfusion, React Flow, responsive UI development
+React, Next.js, Angular, Material UI, Angular Material, CSS, Tailwind, Bootstrap
 
 ### Backend Development
-Node.js, Express.js, Django, Firebase, REST APIs, authentication workflows
+Node.js, Express.js, Django, Firebase, REST APIs
 
 ### Databases
-PostgreSQL, AWS RDS, Supabase, MongoDB, MySQL, Firebase Realtime Database/Firestore
+PostgreSQL, AWS RDS, Supabase, MongoDB, MySQL
 
 ### Machine Learning
 TensorFlow, Keras, PyTorch, scikit-learn, NumPy, Pandas, CNNs, LSTMs, Autoencoders, GANs, Grad-CAM, CBAM, reinforcement learning concepts
 
 ### Networking and Simulation
-ns-3, HPCC simulator, DCTCP, DCQCN, TIMELY, HPCC, HPCC-PINT, QCN, RoCEv2, RDMA, ECN, PFC, TCP, queue analysis, FCT analysis
+ns-3, DCTCP, DCQCN, TIMELY, HPCC, QCN, RoCEv2, RDMA, ECN, PFC, TCP
 
 ### Wireless and Sensing
-WiFi CSI, ESP-32, CSI Toolkit, SNR/BER/packet-loss analysis, adaptive rate control, Minstrel/Minstrel-HT concepts
+WiFi CSI, ESP-32, CSI Toolkit, adaptive rate control
 
 ### Testing and Tools
-Jest, Playwright, Storybook, Postman, Git, GitHub, JIRA, Docker, Linux, shell scripting, Jupyter Notebook, VS Code, CLion
+Jest, Playwright, Storybook, Postman, Git, GitHub, JIRA, Linux, Jupyter Notebook, VS Code, CLion
 
 ### Cloud and DevOps
 AWS EC2, AWS S3, AWS RDS, AWS IAM, AWS Amplify, Docker, basic ECR/ECS exposure

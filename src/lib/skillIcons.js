@@ -62,6 +62,7 @@ const ICONS = {
   angular: SiAngular,
   "material ui": SiMui,
   "tailwind css": SiTailwindcss,
+  tailwind: SiTailwindcss,
   scss: SiSass,
   bootstrap: SiBootstrap,
 
