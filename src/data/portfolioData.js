@@ -1,4 +1,5 @@
 const RESEARCH_IMAGE_BASE = `${import.meta.env.BASE_URL}images/research`;
+const PROJECT_IMAGE_BASE = `${import.meta.env.BASE_URL}images/projects`;
 
 export const defaultPortfolioData = {
   profile: {
@@ -201,6 +202,7 @@ export const defaultPortfolioData = {
         "A healthcare platform designed to improve communication between patients and healthcare providers, featuring pre and post appointment wellness tracking and data flow management.",
       tools: ["JavaScript", "Node.js", "Supabase", "SQL", "Vite"],
       repo: "https://github.com/UNO-CSCI4830/CareTrack-Connect",
+      image: `${PROJECT_IMAGE_BASE}/healthcare.png`,
     },
     {
       title: "Portfolio Builder",
@@ -208,6 +210,7 @@ export const defaultPortfolioData = {
         "A full-stack platform that allows users to create professional portfolio websites with authentication, customizable sections, and public sharing links.",
       tools: ["React", "JavaScript", "Node.js", "PostgreSQL", "AWS RDS", "AWS Amplify"],
       repo: "https://github.com/ZSMeem/Portfolio-Builder",
+      image: `${PROJECT_IMAGE_BASE}/portfolio.jpg`,
     },
     {
       title: "CP CMS: Competitive Programming Community Management System",
@@ -224,6 +227,7 @@ export const defaultPortfolioData = {
         "Manually planning course prerequisites across a curriculum is tedious and error-prone. This project models courses as nodes and prerequisite relationships as directed edges in a Directed Acyclic Graph, applying cycle detection and topological sorting to compute valid course sequences and render interactive curriculum visualizations.",
       tools: ["Python", "NetworkX", "Matplotlib", "Graph Algorithms", "DAG"],
       repo: "https://github.com/ZSMeem/Knowledge-Graph-based-Curriculum-Planner-Using-Graph-Algorithms",
+      image: `${PROJECT_IMAGE_BASE}/KG.png`,
     },
     {
       title: "Unsupervised Anomaly Detection on Network Traffic using Autoencoders",
@@ -231,6 +235,7 @@ export const defaultPortfolioData = {
         "Labeled attack data is scarce and constantly goes stale as new attack types emerge. This project trains a TensorFlow/Keras autoencoder exclusively on normal network traffic from the NSL-KDD dataset, flagging anomalies by reconstruction error and achieving 0.956 ROC-AUC and 86% accuracy without ever seeing attack examples during training.",
       tools: ["Python", "TensorFlow", "Keras", "scikit-learn", "Pandas", "NumPy"],
       repo: "https://github.com/ZSMeem/Unsupervised-Anomaly-Detection-on-Network-Traffic-using-Autoencoders-on-the-NSL-KDD-Dataset",
+      image: `${PROJECT_IMAGE_BASE}/autoencoder.png`,
     },
     {
       title: "Comparative Analysis of Deep Learning Models for IMDB Sentiment Classification",
@@ -238,6 +243,7 @@ export const defaultPortfolioData = {
         "Choosing the right model for sentiment classification isn't always about deep learning being \"better.\" This project benchmarks Logistic Regression with TF-IDF against LSTM, Text CNN, and DistilBERT on IMDB movie reviews, finding that Logistic Regression achieved the strongest F1-score (0.871) while training 5-10x faster than the neural models.",
       tools: ["Python", "TensorFlow", "Keras", "scikit-learn", "Hugging Face", "Pandas"],
       repo: "https://github.com/ZSMeem/Comparative-Analysis-of-Deep-Learning-Models-for-IMDB-Sentiment-Classification",
+      image: `${PROJECT_IMAGE_BASE}/sentimentsnalysis.jpg`,
     },
   ],
   research: [

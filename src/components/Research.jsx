@@ -12,21 +12,21 @@ function ResearchCard({ item, reverse }) {
     dotIndex !== -1 ? item.description.slice(dotIndex + 1).trim() : "";
 
   const cardClass = item.image
-    ? `card research-card has-image${reverse ? " reverse" : ""}`
-    : "card research-card";
+    ? `card media-card has-image${reverse ? " reverse" : ""}`
+    : "card media-card";
 
   return (
     <div className={cardClass}>
       {item.image && (
         <img
-          className="research-image"
+          className="media-card-image"
           src={item.image}
           alt={item.title}
           loading="lazy"
         />
       )}
 
-      <div className="research-body">
+      <div className="media-card-body">
         <h4>{item.title}</h4>
         <p className="research-summary">{summary}</p>
 

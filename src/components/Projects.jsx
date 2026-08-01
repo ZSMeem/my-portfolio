@@ -1,46 +1,64 @@
 function ProjectList({ projects }) {
   return (
     <div className="stack">
-      {projects.map((project) => (
-        <div key={project.title} className="card">
-          <h4>{project.title}</h4>
-          <p>{project.description}</p>
-          {project.tools?.length > 0 && (
-            <div className="project-tags">
-              {project.tools.map((tool) => (
-                <span key={`${project.title}-${tool}`} className="project-tag">
-                  {tool}
-                </span>
-              ))}
-            </div>
-          )}
+      {projects.map((project, index) => {
+        const reverse = index % 2 === 1;
+        const cardClass = project.image
+          ? `card media-card has-image${reverse ? " reverse" : ""}`
+          : "card media-card";
 
-          {(project.link || project.repo) && (
-            <div className="card-links">
-              {project.link && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="card-link"
-                >
-                  View Publication →
-                </a>
+        return (
+          <div key={project.title} className={cardClass}>
+            {project.image && (
+              <img
+                className="media-card-image"
+                src={project.image}
+                alt={project.title}
+                loading="lazy"
+              />
+            )}
+
+            <div className="media-card-body">
+              <h4>{project.title}</h4>
+              <p>{project.description}</p>
+              {project.tools?.length > 0 && (
+                <div className="project-tags">
+                  {project.tools.map((tool) => (
+                    <span key={`${project.title}-${tool}`} className="project-tag">
+                      {tool}
+                    </span>
+                  ))}
+                </div>
               )}
-              {project.repo && (
-                <a
-                  href={project.repo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="card-link"
-                >
-                  View Code →
-                </a>
+
+              {(project.link || project.repo) && (
+                <div className="card-links">
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="card-link"
+                    >
+                      View Publication →
+                    </a>
+                  )}
+                  {project.repo && (
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="card-link"
+                    >
+                      View Code →
+                    </a>
+                  )}
+                </div>
               )}
             </div>
-          )}
-        </div>
-      ))}
+          </div>
+        );
+      })}
     </div>
   );
 }

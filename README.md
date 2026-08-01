@@ -105,12 +105,14 @@ AWS EC2, AWS S3, AWS RDS, AWS IAM, AWS Amplify, Docker, basic ECR/ECS exposure
 ### CareTrack-Connect: Health Tracking Platform
 **Tools:** JavaScript, Node.js, Supabase, SQL, Vite
 **Repo:** https://github.com/UNO-CSCI4830/CareTrack-Connect
+![CareTrack-Connect: Health Tracking Platform](https://zsmeem.github.io/my-portfolio/images/projects/healthcare.png)
 
 A healthcare platform designed to improve communication between patients and healthcare providers, featuring pre and post appointment wellness tracking and data flow management.
 
 ### Portfolio Builder
 **Tools:** React, JavaScript, Node.js, PostgreSQL, AWS RDS, AWS Amplify
 **Repo:** https://github.com/ZSMeem/Portfolio-Builder
+![Portfolio Builder](https://zsmeem.github.io/my-portfolio/images/projects/portfolio.jpg)
 
 A full-stack platform that allows users to create professional portfolio websites with authentication, customizable sections, and public sharing links.
 
@@ -125,18 +127,21 @@ A full-featured platform for contest management, real-time leaderboards, user ra
 ### Knowledge Graph-based Curriculum Planner
 **Tools:** Python, NetworkX, Matplotlib, Graph Algorithms, DAG
 **Repo:** https://github.com/ZSMeem/Knowledge-Graph-based-Curriculum-Planner-Using-Graph-Algorithms
+![Knowledge Graph-based Curriculum Planner](https://zsmeem.github.io/my-portfolio/images/projects/KG.png)
 
 Manually planning course prerequisites across a curriculum is tedious and error-prone. This project models courses as nodes and prerequisite relationships as directed edges in a Directed Acyclic Graph, applying cycle detection and topological sorting to compute valid course sequences and render interactive curriculum visualizations.
 
 ### Unsupervised Anomaly Detection on Network Traffic using Autoencoders
 **Tools:** Python, TensorFlow, Keras, scikit-learn, Pandas, NumPy
 **Repo:** https://github.com/ZSMeem/Unsupervised-Anomaly-Detection-on-Network-Traffic-using-Autoencoders-on-the-NSL-KDD-Dataset
+![Unsupervised Anomaly Detection on Network Traffic using Autoencoders](https://zsmeem.github.io/my-portfolio/images/projects/autoencoder.png)
 
 Labeled attack data is scarce and constantly goes stale as new attack types emerge. This project trains a TensorFlow/Keras autoencoder exclusively on normal network traffic from the NSL-KDD dataset, flagging anomalies by reconstruction error and achieving 0.956 ROC-AUC and 86% accuracy without ever seeing attack examples during training.
 
 ### Comparative Analysis of Deep Learning Models for IMDB Sentiment Classification
 **Tools:** Python, TensorFlow, Keras, scikit-learn, Hugging Face, Pandas
 **Repo:** https://github.com/ZSMeem/Comparative-Analysis-of-Deep-Learning-Models-for-IMDB-Sentiment-Classification
+![Comparative Analysis of Deep Learning Models for IMDB Sentiment Classification](https://zsmeem.github.io/my-portfolio/images/projects/sentimentsnalysis.jpg)
 
 Choosing the right model for sentiment classification isn't always about deep learning being "better." This project benchmarks Logistic Regression with TF-IDF against LSTM, Text CNN, and DistilBERT on IMDB movie reviews, finding that Logistic Regression achieved the strongest F1-score (0.871) while training 5-10x faster than the neural models.
 
