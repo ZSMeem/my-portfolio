@@ -100,19 +100,13 @@ AWS EC2, AWS S3, AWS RDS, AWS IAM, AWS Amplify, Docker, basic ECR/ECS exposure
 - Global Rank 9th in ICPC AlgoQueen 2024 Final Round.
 - Expert level on Codeforces (~1600 rating).
 
-## Projects
+## Development Projects
 
 ### CareTrack-Connect: Health Tracking Platform
 **Tools:** JavaScript, Node.js, Supabase, SQL, Vite
 **Repo:** https://github.com/UNO-CSCI4830/CareTrack-Connect
 
 A healthcare platform designed to improve communication between patients and healthcare providers, featuring pre and post appointment wellness tracking and data flow management.
-
-### Knowledge Graph-based Curriculum Planner
-**Tools:** Python, NetworkX, Matplotlib, Graph Algorithms, DAG
-**Repo:** https://github.com/ZSMeem/Knowledge-Graph-based-Curriculum-Planner-Using-Graph-Algorithms
-
-Manually planning course prerequisites across a curriculum is tedious and error-prone. This project models courses as nodes and prerequisite relationships as directed edges in a Directed Acyclic Graph, applying cycle detection and topological sorting to compute valid course sequences and render interactive curriculum visualizations.
 
 ### Portfolio Builder
 **Tools:** React, JavaScript, Node.js, PostgreSQL, AWS RDS, AWS Amplify
@@ -125,6 +119,26 @@ A full-stack platform that allows users to create professional portfolio website
 **Repo:** https://github.com/ZSMeem/cpcms
 
 A full-featured platform for contest management, real-time leaderboards, user ranking systems, and automated contest data scraping using Puppeteer and JSDOM parsing.
+
+## AI Projects
+
+### Knowledge Graph-based Curriculum Planner
+**Tools:** Python, NetworkX, Matplotlib, Graph Algorithms, DAG
+**Repo:** https://github.com/ZSMeem/Knowledge-Graph-based-Curriculum-Planner-Using-Graph-Algorithms
+
+Manually planning course prerequisites across a curriculum is tedious and error-prone. This project models courses as nodes and prerequisite relationships as directed edges in a Directed Acyclic Graph, applying cycle detection and topological sorting to compute valid course sequences and render interactive curriculum visualizations.
+
+### Unsupervised Anomaly Detection on Network Traffic using Autoencoders
+**Tools:** Python, TensorFlow, Keras, scikit-learn, Pandas, NumPy
+**Repo:** https://github.com/ZSMeem/Unsupervised-Anomaly-Detection-on-Network-Traffic-using-Autoencoders-on-the-NSL-KDD-Dataset
+
+Labeled attack data is scarce and constantly goes stale as new attack types emerge. This project trains a TensorFlow/Keras autoencoder exclusively on normal network traffic from the NSL-KDD dataset, flagging anomalies by reconstruction error and achieving 0.956 ROC-AUC and 86% accuracy without ever seeing attack examples during training.
+
+### Comparative Analysis of Deep Learning Models for IMDB Sentiment Classification
+**Tools:** Python, TensorFlow, Keras, scikit-learn, Hugging Face, Pandas
+**Repo:** https://github.com/ZSMeem/Comparative-Analysis-of-Deep-Learning-Models-for-IMDB-Sentiment-Classification
+
+Choosing the right model for sentiment classification isn't always about deep learning being "better." This project benchmarks Logistic Regression with TF-IDF against LSTM, Text CNN, and DistilBERT on IMDB movie reviews, finding that Logistic Regression achieved the strongest F1-score (0.871) while training 5-10x faster than the neural models.
 
 ## Research
 

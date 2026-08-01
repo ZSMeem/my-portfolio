@@ -163,7 +163,8 @@ export async function getReadmeContent() {
     experience: parseExperience(extractSection(content, "Experience")),
     education: parseEducation(extractSection(content, "Education")),
     achievements: parseBullets(extractSection(content, "Achievements")),
-    projects: parseProjects(extractSection(content, "Projects")),
+    developmentProjects: parseProjects(extractSection(content, "Development Projects")),
+    aiProjects: parseProjects(extractSection(content, "AI Projects")),
     research: parseProjects(extractSection(content, "Research")),
   };
 }

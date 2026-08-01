@@ -194,20 +194,13 @@ export const defaultPortfolioData = {
     "3-time ICPC Regionalist.",
     "Global Rank 9th in ICPC AlgoQueen 2024 Final.",
   ],
-  projects: [
+  developmentProjects: [
     {
       title: "CareTrack-Connect: Health Tracking Platform",
       description:
         "A healthcare platform designed to improve communication between patients and healthcare providers, featuring pre and post appointment wellness tracking and data flow management.",
       tools: ["JavaScript", "Node.js", "Supabase", "SQL", "Vite"],
       repo: "https://github.com/UNO-CSCI4830/CareTrack-Connect",
-    },
-    {
-      title: "Knowledge Graph-based Curriculum Planner",
-      description:
-        "Manually planning course prerequisites across a curriculum is tedious and error-prone. This project models courses as nodes and prerequisite relationships as directed edges in a Directed Acyclic Graph, applying cycle detection and topological sorting to compute valid course sequences and render interactive curriculum visualizations.",
-      tools: ["Python", "NetworkX", "Matplotlib", "Graph Algorithms", "DAG"],
-      repo: "https://github.com/ZSMeem/Knowledge-Graph-based-Curriculum-Planner-Using-Graph-Algorithms",
     },
     {
       title: "Portfolio Builder",
@@ -222,6 +215,29 @@ export const defaultPortfolioData = {
         "A full-featured platform for contest management, real-time leaderboards, user ranking systems, and automated contest data scraping using Puppeteer and JSDOM parsing.",
       tools: ["Angular", "TypeScript", "Material UI", "Node.js", "MongoDB", "Puppeteer"],
       repo: "https://github.com/ZSMeem/cpcms",
+    },
+  ],
+  aiProjects: [
+    {
+      title: "Knowledge Graph-based Curriculum Planner",
+      description:
+        "Manually planning course prerequisites across a curriculum is tedious and error-prone. This project models courses as nodes and prerequisite relationships as directed edges in a Directed Acyclic Graph, applying cycle detection and topological sorting to compute valid course sequences and render interactive curriculum visualizations.",
+      tools: ["Python", "NetworkX", "Matplotlib", "Graph Algorithms", "DAG"],
+      repo: "https://github.com/ZSMeem/Knowledge-Graph-based-Curriculum-Planner-Using-Graph-Algorithms",
+    },
+    {
+      title: "Unsupervised Anomaly Detection on Network Traffic using Autoencoders",
+      description:
+        "Labeled attack data is scarce and constantly goes stale as new attack types emerge. This project trains a TensorFlow/Keras autoencoder exclusively on normal network traffic from the NSL-KDD dataset, flagging anomalies by reconstruction error and achieving 0.956 ROC-AUC and 86% accuracy without ever seeing attack examples during training.",
+      tools: ["Python", "TensorFlow", "Keras", "scikit-learn", "Pandas", "NumPy"],
+      repo: "https://github.com/ZSMeem/Unsupervised-Anomaly-Detection-on-Network-Traffic-using-Autoencoders-on-the-NSL-KDD-Dataset",
+    },
+    {
+      title: "Comparative Analysis of Deep Learning Models for IMDB Sentiment Classification",
+      description:
+        "Choosing the right model for sentiment classification isn't always about deep learning being \"better.\" This project benchmarks Logistic Regression with TF-IDF against LSTM, Text CNN, and DistilBERT on IMDB movie reviews, finding that Logistic Regression achieved the strongest F1-score (0.871) while training 5-10x faster than the neural models.",
+      tools: ["Python", "TensorFlow", "Keras", "scikit-learn", "Hugging Face", "Pandas"],
+      repo: "https://github.com/ZSMeem/Comparative-Analysis-of-Deep-Learning-Models-for-IMDB-Sentiment-Classification",
     },
   ],
   research: [

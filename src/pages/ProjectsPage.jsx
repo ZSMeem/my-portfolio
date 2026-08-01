@@ -4,5 +4,10 @@ import Projects from "../components/Projects";
 export default function ProjectsPage() {
   const { data } = useOutletContext();
 
-  return <Projects projects={data.projects} />;
+  return (
+    <Projects
+      developmentProjects={data.developmentProjects}
+      aiProjects={data.aiProjects}
+    />
+  );
 }

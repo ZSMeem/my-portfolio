@@ -406,6 +406,23 @@ a {
   gap: 24px;
 }
 
+.projects-group {
+  margin-bottom: 40px;
+}
+
+.projects-group:last-child {
+  margin-bottom: 0;
+}
+
+.projects-group-title {
+  margin: 0 0 20px;
+  padding-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-heading);
+  border-bottom: 1px solid var(--border);
+}
+
 .muted {
   color: var(--text-muted);
 }
