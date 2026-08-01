@@ -25,6 +25,7 @@ Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` to your Vercel project sett
 - **Email:** zerin.shaima.meem@gmail.com
 - **LinkedIn:** https://linkedin.com/in/zerin-shaima-meem
 - **GitHub:** https://github.com/ZSMeem
+- **Google Scholar:** https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AO4B3jupXJmInNIVZJ9E4PLNx1cYCo8RgxQ_qk7T3G8HSS521lKHsIaW7f1mIGp1zyQn9AUWuA7YJNuu5hvjGA&user=MEXMV40AAAAJ
 
 ## Summary
 Software engineer and researcher with a strong background in competitive programming, full-stack development, and AI/networking research. I enjoy building practical systems, solving algorithmic problems, and conducting research that has real-world impact. Currently pursuing a Master's in Computer Science at UNO. My research intersection lies in the intersection of AI and Networking. Also I am highly interested in the field of Software Engineering.

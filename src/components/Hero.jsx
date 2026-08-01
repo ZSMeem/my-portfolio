@@ -53,6 +53,14 @@ export default function Hero({ profile }) {
             View Projects
           </a>
         </p>
+        {profile.scholar && (
+          <p>
+            <strong>Google Scholar:</strong>{" "}
+            <a href={profile.scholar} target="_blank" rel="noreferrer">
+              View Profile
+            </a>
+          </p>
+        )}
       </div>
     </section>
   );

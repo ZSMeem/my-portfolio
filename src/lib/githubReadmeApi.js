@@ -30,6 +30,7 @@ function parseProfile(text) {
     email: map["email"] || "",
     linkedin: map["linkedin"] || "",
     github: map["github"] || "",
+    scholar: map["google scholar"] || "",
   };
 }
 
