@@ -133,11 +133,13 @@ a {
   transition: width 0.25s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--text-heading);
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.active::after {
   width: 100%;
 }
 
@@ -318,18 +320,35 @@ a {
   color: var(--text-heading);
 }
 
+.skills-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.skills-group-title {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 
 .skill-badge {
-  padding: 10px 16px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  padding: 8px 14px;
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  color: var(--tag-color);
   border-radius: 999px;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 600;
   transition: background 0.2s, border-color 0.2s;
 }
 
@@ -565,6 +584,11 @@ a {
 
   .mobile-link:hover {
     background: var(--tag-bg);
+  }
+
+  .mobile-link.active {
+    background: var(--tag-bg);
+    color: var(--tag-color);
   }
 
   .mobile-link:active {

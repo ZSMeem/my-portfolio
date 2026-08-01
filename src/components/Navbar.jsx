@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#experience", label: "Experience" },
-  { href: "#education", label: "Education" },
-  { href: "#achievements", label: "Achievements" },
-  { href: "#projects", label: "Projects" },
-  { href: "#research", label: "Research" },
-  { href: "#contact", label: "Contact" },
+  { to: "/skills", label: "Skills" },
+  { to: "/experience", label: "Experience" },
+  { to: "/education", label: "Education" },
+  { to: "/achievements", label: "Achievements" },
+  { to: "/projects", label: "Projects" },
+  { to: "/research", label: "Research" },
+  { to: "/contact", label: "Contact" },
 ];
 
 function SunIcon() {
@@ -49,23 +49,25 @@ export default function Navbar() {
   }, [dark]);
 
   const handleLinkClick = () => setIsOpen(false);
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <header className="navbar">
       <div className="navbar-inner">
         <h1 className="logo">
-          <button type="button" className="logo-button" onClick={scrollToTop}>
+          <Link to="/" className="logo-button">
             Zerin Shaima Meem
-          </button>
+          </Link>
         </h1>
 
         <div className="navbar-end">
           <nav className="nav-links">
+            <NavLink to="/" end>
+              Home
+            </NavLink>
             {links.map((link) => (
-              <a key={link.href} href={link.href}>
+              <NavLink key={link.to} to={link.to}>
                 {link.label}
-              </a>
+              </NavLink>
             ))}
           </nav>
 
@@ -96,15 +98,18 @@ export default function Navbar() {
 
       {isOpen && (
         <nav className="mobile-menu">
+          <NavLink to="/" end className="mobile-link" onClick={handleLinkClick}>
+            Home
+          </NavLink>
           {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
+            <NavLink
+              key={link.to}
+              to={link.to}
               className="mobile-link"
               onClick={handleLinkClick}
             >
               {link.label}
-            </a>
+            </NavLink>
           ))}
         </nav>
       )}
