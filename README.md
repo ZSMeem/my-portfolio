@@ -34,24 +34,33 @@ Software engineer and researcher with a strong background in competitive program
 My journey spans three interconnected areas: algorithmic problem solving through competitive programming (3000+ problems, three-time ICPC Regionalist), software engineering through industry roles at Samsung R&D and full-stack projects, and research through two international conference publications and graduate-level AI/networking research as research assistant at UNO. I am passionate about designing intelligent systems that combine software engineering and artificial intelligence to solve real-world problems.
 
 ## Skills
-- C++
-- Python
-- JavaScript
-- TypeScript
-- React
-- Angular
-- Node.js
-- Express.js
-- MongoDB
-- PostgreSQL
-- Django
-- Git/GitHub
-- Jest
-- Playwright
-- Storybook
-- AWS
-- Machine Learning
-- Deep Learning
+
+### Programming Languages
+C++, Python, JavaScript, TypeScript, C, Java, SQL, HTML, CSS, LaTeX, Markdown
+
+### Frontend Development
+React, Next.js, Angular, Material UI, Angular Material, Tailwind CSS, SCSS, Bootstrap, Syncfusion, React Flow, responsive UI development
+
+### Backend Development
+Node.js, Express.js, Django, Firebase, REST APIs, authentication workflows
+
+### Databases
+PostgreSQL, AWS RDS, Supabase, MongoDB, MySQL, Firebase Realtime Database/Firestore
+
+### Machine Learning
+TensorFlow, Keras, PyTorch, scikit-learn, NumPy, Pandas, CNNs, LSTMs, Autoencoders, GANs, Grad-CAM, CBAM, reinforcement learning concepts
+
+### Networking and Simulation
+ns-3, HPCC simulator, DCTCP, DCQCN, TIMELY, HPCC, HPCC-PINT, QCN, RoCEv2, RDMA, ECN, PFC, TCP, queue analysis, FCT analysis
+
+### Wireless and Sensing
+WiFi CSI, ESP-32, CSI Toolkit, SNR/BER/packet-loss analysis, adaptive rate control, Minstrel/Minstrel-HT concepts
+
+### Testing and Tools
+Jest, Playwright, Storybook, Postman, Git, GitHub, JIRA, Docker, Linux, shell scripting, Jupyter Notebook, VS Code, CLion
+
+### Cloud and DevOps
+AWS EC2, AWS S3, AWS RDS, AWS IAM, AWS Amplify, Docker, basic ECR/ECS exposure
 
 ## Experience
 

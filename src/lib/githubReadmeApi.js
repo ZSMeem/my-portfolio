@@ -34,6 +34,24 @@ function parseProfile(text) {
   };
 }
 
+function parseSkillGroups(text) {
+  return text
+    .split(/\n(?=### )/)
+    .filter(Boolean)
+    .map((block) => {
+      const lines = block.trim().split("\n");
+      const category = lines[0].replace(/^### /, "").trim();
+      const items = lines
+        .slice(1)
+        .join(" ")
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean);
+      return { category, items };
+    })
+    .filter((g) => g.category);
+}
+
 function parseExperience(text) {
   return text
     .split(/\n(?=### )/)
@@ -141,7 +159,7 @@ export async function getReadmeContent() {
       summary: extractSection(content, "Summary"),
       about: extractSection(content, "About"),
     },
-    skills: parseBullets(extractSection(content, "Skills")),
+    skills: parseSkillGroups(extractSection(content, "Skills")),
     experience: parseExperience(extractSection(content, "Experience")),
     education: parseEducation(extractSection(content, "Education")),
     achievements: parseBullets(extractSection(content, "Achievements")),
