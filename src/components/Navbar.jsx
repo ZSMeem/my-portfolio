@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const links = [
-  { to: "/skills", label: "Skills" },
   { to: "/experience", label: "Experience" },
   { to: "/education", label: "Education" },
   { to: "/achievements", label: "Achievements" },
   { to: "/projects", label: "Projects" },
   { to: "/research", label: "Research" },
+  { to: "/skills", label: "Skills" },
 ];
 
 function SunIcon() {
