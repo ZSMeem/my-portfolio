@@ -1,5 +1,6 @@
 const RESEARCH_IMAGE_BASE = `${import.meta.env.BASE_URL}images/research`;
 const PROJECT_IMAGE_BASE = `${import.meta.env.BASE_URL}images/projects`;
+const ACHIEVEMENT_IMAGE_BASE = `${import.meta.env.BASE_URL}images/achievements`;
 
 export const defaultPortfolioData = {
   profile: {
@@ -208,6 +209,7 @@ export const defaultPortfolioData = {
         "AtCoder rating 957.",
         "Mentored junior programmers in algorithmic problem solving, graph algorithms, recursion, backtracking, dynamic programming, and contest preparation.",
       ],
+      image: `${ACHIEVEMENT_IMAGE_BASE}/481788654_28741316665512686_6111080548469494225_n.jpg`,
     },
     {
       category: "Posters and Presentations",
@@ -216,6 +218,7 @@ export const defaultPortfolioData = {
         '"A CSI-Based Position Independent Gesture Recognition System Using Deep Learning," IEEE WIECON-ECE 2024.',
         '"Spot Light: Disaster Safety Assistance Mobile Application," ICCPCT 2024.',
       ],
+      image: `${ACHIEVEMENT_IMAGE_BASE}/1764885692451.jpeg`,
     },
     {
       category: "Academic and Professional Service",
@@ -225,6 +228,7 @@ export const defaultPortfolioData = {
         "Student community contributor, Bangladesh Student Association, University of Nebraska at Omaha.",
         "Assisted with student activities, event planning, and community-facing materials.",
       ],
+      image: `${ACHIEVEMENT_IMAGE_BASE}/1660806653066.jpeg`,
     },
   ],
   developmentProjects: [

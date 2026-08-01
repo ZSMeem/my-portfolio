@@ -51,11 +51,15 @@ function parseBulletGroups(text) {
     .map((block) => {
       const lines = block.trim().split("\n");
       const category = lines[0].replace(/^### /, "").trim();
+      const imageLine = lines.find((l) => /^!\[.*\]\(.*\)/.test(l));
+      const image = imageLine
+        ? imageLine.match(/^!\[.*\]\((.*)\)/)[1].trim()
+        : "";
       const items = lines
         .slice(1)
         .filter((l) => l.startsWith("- "))
         .map((l) => l.slice(2).trim());
-      return { category, items };
+      return { category, items, image };
     })
     .filter((g) => g.category);
 }

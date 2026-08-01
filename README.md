@@ -101,6 +101,7 @@ AWS EC2, AWS S3, AWS RDS, AWS IAM, AWS Amplify, Docker, basic ECR/ECS exposure
 - 1st place among 132 participants, CUET Reception Programming Contest, 2019.
 
 ### Competitive Programming
+![Competitive Programming](https://zsmeem.github.io/my-portfolio/images/achievements/481788654_28741316665512686_6111080548469494225_n.jpg)
 - Solved 3000+ problems across online judges.
 - Codeforces Expert; maximum rating 1607.
 - CodeChef 3-star; maximum rating 1788.
@@ -108,11 +109,13 @@ AWS EC2, AWS S3, AWS RDS, AWS IAM, AWS Amplify, Docker, basic ECR/ECS exposure
 - Mentored junior programmers in algorithmic problem solving, graph algorithms, recursion, backtracking, dynamic programming, and contest preparation.
 
 ### Posters and Presentations
+![Posters and Presentations](https://zsmeem.github.io/my-portfolio/images/achievements/1764885692451.jpeg)
 - "A Comparative Analysis of Congestion Control Algorithms in Large-Scale Datacenters," UNO C-BYTES Research Showcase, Honorable Mention, Dec. 2025.
 - "A CSI-Based Position Independent Gesture Recognition System Using Deep Learning," IEEE WIECON-ECE 2024.
 - "Spot Light: Disaster Safety Assistance Mobile Application," ICCPCT 2024.
 
 ### Academic and Professional Service
+![Academic and Professional Service](https://zsmeem.github.io/my-portfolio/images/achievements/1660806653066.jpeg)
 - Programming mentor, CUET Computer Club.
 - Secretary, CUET Computer Club.
 - Student community contributor, Bangladesh Student Association, University of Nebraska at Omaha.
