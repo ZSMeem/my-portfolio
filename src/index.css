@@ -321,8 +321,8 @@ a {
 }
 
 .skills-groups {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -342,7 +342,10 @@ a {
 }
 
 .skill-badge {
-  padding: 8px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 10px;
   background: var(--tag-bg);
   border: 1px solid var(--tag-border);
   color: var(--tag-color);
@@ -350,6 +353,26 @@ a {
   font-size: 13px;
   font-weight: 600;
   transition: background 0.2s, border-color 0.2s;
+}
+
+.skill-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.skill-icon-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--tag-border);
+  color: var(--tag-color);
+  font-size: 8px;
+  font-weight: 700;
 }
 
 .stack {
