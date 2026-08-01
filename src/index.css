@@ -285,8 +285,7 @@ a {
   transition: background 0.2s, border-color 0.2s;
 }
 
-.info-card a,
-.contact-list a {
+.info-card a {
   color: #2563eb;
 }
 
@@ -425,10 +424,6 @@ a {
 
 .muted {
   color: var(--text-muted);
-}
-
-.contact-list {
-  margin-top: 16px;
 }
 
 .project-tags {
@@ -572,6 +567,45 @@ a {
   border-radius: 16px;
   background: var(--bg-card);
   color: var(--text-secondary);
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg-card);
+  scroll-margin-top: 88px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.footer-inner h3 {
+  margin: 0 0 16px;
+  font-size: 28px;
+  color: var(--text-heading);
+}
+
+.footer-intro {
+  margin: 0 0 24px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.footer-contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+}
+
+.footer-contact-list p {
+  margin: 0;
+}
+
+.footer-contact-list a {
+  color: #2563eb;
 }
 
 @media (max-width: 768px) {

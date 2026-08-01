@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { usePortfolioContent } from "../hooks/usePortfolioContent";
 
 export default function Layout() {
@@ -17,6 +18,7 @@ export default function Layout() {
       <main className="container">
         <Outlet context={{ data }} />
       </main>
+      <Footer profile={data.profile} />
     </div>
   );
 }

@@ -7,7 +7,6 @@ import EducationPage from "./pages/EducationPage";
 import AchievementsPage from "./pages/AchievementsPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ResearchPage from "./pages/ResearchPage";
-import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
         <Route path="/achievements" element={<AchievementsPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/research" element={<ResearchPage />} />
-        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

@@ -1,14 +1,14 @@
-export default function Contact({ profile }) {
+export default function Footer({ profile }) {
   return (
-    <section id="contact" className="section">
-      <h3>Contact</h3>
-      <div className="card">
-        <p>
+    <footer id="contact" className="footer">
+      <div className="footer-inner">
+        <h3>Contact</h3>
+        <p className="footer-intro">
           Feel free to reach out for collaboration, research, or software
           engineering opportunities.
         </p>
 
-        <div className="contact-list">
+        <div className="footer-contact-list">
           <p>
             <strong>Email:</strong> {profile.email}
           </p>
@@ -23,6 +23,6 @@ export default function Contact({ profile }) {
           </p>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }

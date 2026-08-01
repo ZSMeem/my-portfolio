@@ -8,7 +8,6 @@ const links = [
   { to: "/achievements", label: "Achievements" },
   { to: "/projects", label: "Projects" },
   { to: "/research", label: "Research" },
-  { to: "/contact", label: "Contact" },
 ];
 
 function SunIcon() {
