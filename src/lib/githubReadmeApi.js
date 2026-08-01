@@ -8,14 +8,6 @@ function extractSection(content, name) {
   return m ? m[1].trim() : "";
 }
 
-function parseBullets(text) {
-  return text
-    .split("\n")
-    .filter((l) => l.startsWith("- "))
-    .map((l) => l.slice(2).trim())
-    .filter(Boolean);
-}
-
 function parseProfile(text) {
   const map = {};
   for (const line of text.split("\n")) {
@@ -47,6 +39,22 @@ function parseSkillGroups(text) {
         .split(",")
         .map((s) => s.trim())
         .filter(Boolean);
+      return { category, items };
+    })
+    .filter((g) => g.category);
+}
+
+function parseBulletGroups(text) {
+  return text
+    .split(/\n(?=### )/)
+    .filter(Boolean)
+    .map((block) => {
+      const lines = block.trim().split("\n");
+      const category = lines[0].replace(/^### /, "").trim();
+      const items = lines
+        .slice(1)
+        .filter((l) => l.startsWith("- "))
+        .map((l) => l.slice(2).trim());
       return { category, items };
     })
     .filter((g) => g.category);
@@ -162,7 +170,7 @@ export async function getReadmeContent() {
     skills: parseSkillGroups(extractSection(content, "Skills")),
     experience: parseExperience(extractSection(content, "Experience")),
     education: parseEducation(extractSection(content, "Education")),
-    achievements: parseBullets(extractSection(content, "Achievements")),
+    achievements: parseBulletGroups(extractSection(content, "Achievements")),
     developmentProjects: parseProjects(extractSection(content, "Development Projects")),
     aiProjects: parseProjects(extractSection(content, "AI Projects")),
     research: parseProjects(extractSection(content, "Research")),

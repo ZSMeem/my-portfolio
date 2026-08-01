@@ -92,13 +92,31 @@ AWS EC2, AWS S3, AWS RDS, AWS IAM, AWS Amplify, Docker, basic ECR/ECS exposure
 - CGPA: 3.67/4.00
 
 ## Achievements
-- Graduate Research and Creative Activity (GRACA) Scholarship, UNO, Summer 2026.
-- Honorable Mention at the UNO C-Bytes Research Showcase.
-- Two international conference publications (WIECON-ECE IEEE 2024, ICCPCT 2024).
-- Solved 3000+ programming problems across multiple online judges.
-- Three-time ICPC Regionalist.
-- Global Rank 9th in ICPC AlgoQueen 2024 Final Round.
-- Expert level on Codeforces (~1600 rating).
+
+### Honors and Awards
+- Graduate Research and Creative Activity (GRACA) Scholarship, University of Nebraska at Omaha, $5,000, Summer 2026.
+- Honorable Mention, UNO C-BYTES Research Showcase, poster titled "A Comparative Analysis of Congestion Control Algorithms in Large-Scale Datacenters," Dec. 2025.
+- ICPC AlgoQueen 2024 Finalist, Global Rank 9, Top 1%.
+- Three-time ICPC Dhaka Regionalist.
+- 1st place among 132 participants, CUET Reception Programming Contest, 2019.
+
+### Competitive Programming
+- Solved 3000+ problems across online judges.
+- Codeforces Expert; maximum rating 1607.
+- CodeChef 3-star; maximum rating 1788.
+- AtCoder rating 957.
+- Mentored junior programmers in algorithmic problem solving, graph algorithms, recursion, backtracking, dynamic programming, and contest preparation.
+
+### Posters and Presentations
+- "A Comparative Analysis of Congestion Control Algorithms in Large-Scale Datacenters," UNO C-BYTES Research Showcase, Honorable Mention, Dec. 2025.
+- "A CSI-Based Position Independent Gesture Recognition System Using Deep Learning," IEEE WIECON-ECE 2024.
+- "Spot Light: Disaster Safety Assistance Mobile Application," ICCPCT 2024.
+
+### Academic and Professional Service
+- Programming mentor, CUET Computer Club.
+- Secretary, CUET Computer Club.
+- Student community contributor, Bangladesh Student Association, University of Nebraska at Omaha.
+- Assisted with student activities, event planning, and community-facing materials.
 
 ## Development Projects
 

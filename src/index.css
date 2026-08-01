@@ -325,7 +325,8 @@ a {
   gap: 20px;
 }
 
-.skills-group-title {
+.skills-group-title,
+.achievements-group-title {
   margin: 0 0 16px;
   font-size: 13px;
   font-weight: 700;
