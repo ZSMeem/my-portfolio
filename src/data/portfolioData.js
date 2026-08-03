@@ -15,9 +15,9 @@ export const defaultPortfolioData = {
       "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AO4B3jupXJmInNIVZJ9E4PLNx1cYCo8RgxQ_qk7T3G8HSS521lKHsIaW7f1mIGp1zyQn9AUWuA7YJNuu5hvjGA&user=MEXMV40AAAAJ",
     avatar: "https://github.com/ZSMeem.png",
     summary:
-      "Programmer with strong passion for Software Engineering and Artificial Intelligence. I enjoy building practical systems, solving algorithmic problems, and doing research that has real-world impact.",
+      "Software engineer and researcher with a strong background in competitive programming, software engineering, and AI/networking research. I enjoy building practical systems, solving algorithmic problems, and conducting research that has real-world impact. Currently pursuing a Master's in Computer Science at UNO, where my research focuses on the intersection of AI and networking.",
     about:
-      "I am a software engineer and graduate student who enjoys web development, AI, and systems research. My background in competitive programming strengthened my problem-solving skills, and my academic and industry experiences helped me grow as both an engineer and a researcher.",
+      "My journey spans three interconnected areas. I've built algorithmic problem-solving skills through competitive programming (3000+ problems, three-time ICPC Regionalist), gained software engineering experience through industry roles at Samsung R&D and full-stack projects, and pursued research through two international conference publications and graduate-level AI/networking work as a research assistant at UNO. I am passionate about designing intelligent systems that combine software engineering and artificial intelligence to solve real-world problems.",
   },
   skills: [
     {

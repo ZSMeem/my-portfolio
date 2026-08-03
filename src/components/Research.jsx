@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function ResearchCard({ item, reverse }) {
   const [open, setOpen] = useState(false);
+  const [imageFailed, setImageFailed] = useState(false);
 
   const dotIndex = item.description.indexOf(". ");
   const summary =
@@ -11,18 +12,20 @@ function ResearchCard({ item, reverse }) {
   const details =
     dotIndex !== -1 ? item.description.slice(dotIndex + 1).trim() : "";
 
-  const cardClass = item.image
+  const showImage = item.image && !imageFailed;
+  const cardClass = showImage
     ? `card media-card has-image${reverse ? " reverse" : ""}`
     : "card media-card";
 
   return (
     <div className={cardClass}>
-      {item.image && (
+      {showImage && (
         <img
           className="media-card-image"
           src={item.image}
           alt={item.title}
           loading="lazy"
+          onError={() => setImageFailed(true)}
         />
       )}
 

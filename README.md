@@ -28,10 +28,10 @@ Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` to your Vercel project sett
 - **Google Scholar:** https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AO4B3jupXJmInNIVZJ9E4PLNx1cYCo8RgxQ_qk7T3G8HSS521lKHsIaW7f1mIGp1zyQn9AUWuA7YJNuu5hvjGA&user=MEXMV40AAAAJ
 
 ## Summary
-Software engineer and researcher with a strong background in competitive programming, full-stack development, and AI/networking research. I enjoy building practical systems, solving algorithmic problems, and conducting research that has real-world impact. Currently pursuing a Master's in Computer Science at UNO. My research intersection lies in the intersection of AI and Networking. Also I am highly interested in the field of Software Engineering.
+Software engineer and researcher with a strong background in competitive programming, software engineering, and AI/networking research. I enjoy building practical systems, solving algorithmic problems, and conducting research that has real-world impact. Currently pursuing a Master's in Computer Science at UNO, where my research focuses on the intersection of AI and networking.
 
 ## About
-My journey spans three interconnected areas: algorithmic problem solving through competitive programming (3000+ problems, three-time ICPC Regionalist), software engineering through industry roles at Samsung R&D and full-stack projects, and research through two international conference publications and graduate-level AI/networking research as research assistant at UNO. I am passionate about designing intelligent systems that combine software engineering and artificial intelligence to solve real-world problems.
+My journey spans three interconnected areas. I've built algorithmic problem-solving skills through competitive programming (3000+ problems, three-time ICPC Regionalist), gained software engineering experience through industry roles at Samsung R&D and full-stack projects, and pursued research through two international conference publications and graduate-level AI/networking work as a research assistant at UNO. I am passionate about designing intelligent systems that combine software engineering and artificial intelligence to solve real-world problems.
 
 ## Skills
 

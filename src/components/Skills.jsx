@@ -1,13 +1,5 @@
 import { getSkillIcon } from "../lib/skillIcons";
 
-function initials(text) {
-  const words = text.split(/[\s/]+/).filter(Boolean);
-  if (words.length >= 2) {
-    return (words[0][0] + words[1][0]).toUpperCase();
-  }
-  return text.slice(0, 2).toUpperCase();
-}
-
 export default function Skills({ skills }) {
   return (
     <section id="skills" className="section">
@@ -21,13 +13,7 @@ export default function Skills({ skills }) {
                 const Icon = getSkillIcon(skill);
                 return (
                   <span key={skill} className="skill-badge">
-                    {Icon ? (
-                      <Icon className="skill-icon" aria-hidden="true" />
-                    ) : (
-                      <span className="skill-icon-fallback" aria-hidden="true">
-                        {initials(skill)}
-                      </span>
-                    )}
+                    {Icon && <Icon className="skill-icon" aria-hidden="true" />}
                     {skill}
                   </span>
                 );
