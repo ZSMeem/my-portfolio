@@ -168,6 +168,22 @@ Choosing the right model for sentiment classification isn't always about deep le
 
 ## Research
 
+### Multi-Bottleneck Fairness on RDMA Fabrics: Deployable Congestion Control and an RCP Service Mode over INT
+**Tools:** NS-3, RDMA, HPCC, DCQCN, In-Network Telemetry, RCP, Max-Min Fairness, IEEE
+
+Deployable RDMA congestion control is almost always evaluated on single-bottleneck benchmarks, even though datacenter traffic increasingly crosses several contended links in series. This work measures multi-bottleneck fairness on lossless RDMA fabrics and finds that every scheme evaluated (DCQCN, TIMELY, DCTCP, HPCC, and PowerTCP) is unfair to the multi-bottleneck flow, by 1.6–2.3× against a max-min reference. It proposes RDMA-RCP, which carries a shared per-link fair-rate register in a single 64-bit INT field, restoring max-min allocation (1.005×, zero PFC) and cutting a ring-collective coflow's completion time by 18–23%. Joint work with the University of Massachusetts Boston. Accepted at IEEE IPCC 2027.
+
+### When Routing Dominates Congestion Control: ECMP Imbalance in LLM Training Networks
+**Tools:** NS-3, ECMP, RoCEv2, DCQCN, HPCC, LLM Training, SimAI/AICB
+
+Congestion control algorithms for GPU datacenters are usually evaluated with synthetic workloads that miss the large, synchronized transfers of LLM training. This research drives OSCAR's ns-3 simulator with data-parallel synchronization traffic derived from AICB configurations for GPT-7B, GPT-13B, and DeepSeek-MoE on a 64-GPU, 200 Gbps leaf-spine fabric, comparing OSCAR, DCQCN, and HPCC. Per-flow path analysis shows that ECMP hash collisions on individual ToR–spine links, not the congestion control algorithm, drive the wide per-flow throughput spread (about 39–184 Gbps), while congestion control mainly shapes flow-completion time and queue buildup, with OSCAR reaching a 436 ms mean FCT on GPT-7B and 5.6× lower peak queue depth than DCQCN. Submitted to IEEE ICCC.
+
+### NE-AGCAMNET: Agricultural Camera Networking for High-Fidelity Plant Health Monitoring
+**Tools:** AgIoT, Raspberry Pi 5, Wi-Fi HaLow, LoRaWAN, Edge Computing, Network Security
+
+Rural farm connectivity like LoRaWAN can only carry small per-image summaries, so the high-resolution canopy images needed to spot early disease and defoliation never leave the field. This research project designs a secure, scalable networking architecture for solar-powered Raspberry Pi 5 edge cameras at the Kimmel Orchard & Vineyard testbed in Nebraska City. It uses a hybrid strategy that sends priority full-resolution images immediately and opportunistically syncs the backlog, evaluating options such as Wi-Fi HaLow (802.11ah), private cellular/CBRS, and directional Wi-Fi or mmWave backhaul. This is an ongoing project.
+
+
 ### Adaptive Rate Control in Wireless Networks
 **Tools:** NS-3, Wireless Networking, AI, Rate Adaptation, Python
 ![Adaptive Rate Control in Wireless Networks](https://zsmeem.github.io/my-portfolio/images/research/adaptive-rate-control.png)
